@@ -30,7 +30,7 @@
 
 ---
 
-**Query #1**
+**Query #1 Use a SELECT statement to order the items by price in descending order.**
 
     SELECT price
     FROM superstore
@@ -55,7 +55,7 @@
 | 24.99  |
 
 ---
-**Query #2**
+**Query #2 Use a SUM statement to get the sum of all prices.**
 
     SELECT SUM(price)
     FROM superstore;
@@ -65,18 +65,19 @@
 | 2135.29    |
 
 ---
-**Query #3**
+**Query #3 Use an AVG statement to get the average price of all items.**
 
     SELECT Avg(price)
     FROM superstore
-    ORDER BY price asc;
+    ORDER BY price;
 
 | Avg(price) |
 | ---------- |
 | 142.352667 |
 
 ---
-**Query #4**
+
+**Query #4 Use a MIN statement to get the minimum price of items available.**
 
     SELECT MIN(price)
     FROM superstore;
@@ -86,7 +87,7 @@
 | 24.99      |
 
 ---
-**Query #5**
+**Query #5 Use a MAX statement to get the maximum price of all items available.**
 
     SELECT MAX(price)
     FROM superstore;
@@ -96,17 +97,7 @@
 | 549.00     |
 
 ---
-**Query #6**
-
-    SELECT COUNT(price)
-    FROM superstore;
-
-| COUNT(price) |
-| ------------ |
-| 15           |
-
----
-**Query #7**
+**Query #6 Use a MAX statement to get the maximum price for items in the 'Kitchen Supplies' category.**
 
     SELECT MAX(price), 'Kitchen Supplies'
     FROM superstore;
@@ -116,7 +107,7 @@
 | 549.00     | Kitchen Supplies |
 
 ---
-**Query #8**
+**Query #7 Use an Avg statement to get the average price of items in the 'Kitchen Supplies' category.**
 
     SELECT Avg(price), 'Kitchen Supplies'
     FROM superstore;
@@ -126,7 +117,7 @@
 | 142.352667 | Kitchen Supplies |
 
 ---
-**Query #9**
+**Query #8 Use a MIN statement to get teh minimum price of items in the 'Kitchen Supplies' category.**
 
     SELECT MIN(price), 'Kitchen Supplies'
     FROM superstore;
@@ -136,7 +127,7 @@
 | 24.99      | Kitchen Supplies |
 
 ---
-**Query #10**
+**Query #9 Use a SUM statement to get the sum of the prices of all items in the 'Kitchen Supplies' category.**
 
     SELECT SUM(price), 'Kitchen Supplies'
     FROM superstore;
@@ -144,16 +135,6 @@
 | SUM(price) | Kitchen Supplies |
 | ---------- | ---------------- |
 | 2135.29    | Kitchen Supplies |
-
----
-**Query #11**
-
-    SELECT COUNT(price), 'Kitchen Supplies'
-    FROM superstore;
-
-| COUNT(price) | Kitchen Supplies |
-| ------------ | ---------------- |
-| 15           | Kitchen Supplies |
 
 ---
 
